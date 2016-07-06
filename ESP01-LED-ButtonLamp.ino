@@ -9,9 +9,9 @@
 #include <WiFiUdp.h>
  
 //INPUT CONSTANTS
-const char* ledID = "LED001"; //Name of sensor
-const char* buttonID = "BUT001"; //Name of sensor
-const char* deviceDescription = "Bedroom Lamp";
+const char* ledID = "LED005"; //Name of sensor
+const char* buttonID = "BUT005"; //Name of sensor
+const char* deviceDescription = "Hallway Lamp";
 const char* ssid = "TheSubway"; //Enter your WiFi network name here in the quotation marks
 const char* password = "vanillamoon576"; //Enter your WiFi pasword here in the quotation marks
 unsigned int localPort = 5007;  //UDP send port
@@ -111,7 +111,7 @@ void setupLines() {
   ledSetPoint=0; // input a setpoint for fading as we enter the loop
   
   //Set pin to start interrupts
-  attachInterrupt(digitalPinToInterrupt(buttonPin),buttonInterrupt,CHANGE);
+  attachInterrupt(digitalPinToInterrupt(buttonPin),buttonInterrupt,CHANGE); //Comment out to remove button functionality
 }
 
 //-----------------------------------------------------------------------------
