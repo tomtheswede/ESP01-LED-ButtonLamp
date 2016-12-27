@@ -9,9 +9,9 @@
 #include <WiFiUdp.h>
  
 //INPUT CONSTANTS
-const char* ledID = "LED005"; //Name of sensor
-const char* buttonID = "BUT005"; //Name of sensor
-const char* deviceDescription = "Hallway Lamp";
+const char* ledID = "LED006"; //Name of sensor
+const char* buttonID = "BUT006"; //Name of sensor
+const char* deviceDescription = "Test";
 const char* ssid = "TheSubway"; //Enter your WiFi network name here in the quotation marks
 const char* password = "vanillamoon576"; //Enter your WiFi pasword here in the quotation marks
 unsigned int localPort = 5007;  //UDP send port
